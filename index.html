@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    <h1>Form Practice</h1>
+
+    <form action="process.php" method="POST">
+        <!-- Input Text -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+        <!-- Input NIM -->
+        <label for="nim">NIM:</label>
+        <input type="nim" id="nim" name="nim" placeholder="Your NIM" required><br><br>
+
+        <!-- Input Class -->
+        <label for="class">Class:</label>
+        <input type="class" id="class" name="class" placeholder="Your class" required><br><br>
+        
+
+        <!-- Textarea -->
+        <label for="location">Location:</label><br>
+        <textarea id="location" name="location" rows="4" cols="50" placeholder="Your Location"></textarea><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="major">Major:</label>
+        <select id="major" name="major">
+            <option value="informatic">Informatic</option>
+            <option value="sains data">Sains Data</option>
+            <option value="dkv">DKV</option>
+            <option value="Software engginer">Software Engginer</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="email" name="contactMethod" value="email" checked>
+        <label for="email">Email</label><br>
+        <input type="radio" id="phone" name="contactMethod" value="phone">
+        <label for="phone">Phone</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+
+        <!-- File Upload -->
+        <label for="file">Upload File Ijazah:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
